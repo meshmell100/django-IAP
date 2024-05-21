@@ -1,0 +1,240 @@
+{% extends './../base.html' %}
+{% load static %}
+
+{% block title %}Welcome{% endblock title %}
+
+{% block body %}
+<!--  -->
+<main>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-logo">
+            <img src="{% static 'img/index/logo-big.png' %}" alt="">
+        </div>
+        <div class="hero-right">
+            <div class="hero-side-img">
+                <img class="egg-salad" src="{% static 'img/index/egg-salad.png' %}" alt="">
+                <img class="meatballs" src="{% static 'img/index/meatballs.png' %}" alt="">
+            </div>
+            <div class="hero-footer">
+                <div class="hero-text">
+                    <span>Bringing class to cuisine</span>
+                    <span>Good food,perfect service,wonderful mood</span>
+                </div>
+                <div class="cta">
+                    <a href="{% url 'users:login' %}">LOG IN</a>
+                    <a href="{% url 'users:signup' %}">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO END -->
+    <!-- ABOUT US START -->
+    <section id="about-us" class="about-us">
+        <div>
+            <img src="{% static 'img/index/exterior.jpg' %}" alt="">
+        </div>
+        <div>
+            <img src="{% static 'img/index/team.jpg' %}" alt="">
+        </div>
+        <div>
+            <img src="{% static 'img/index/cheff-specials.jpg' %}" alt="">
+        </div>
+        <div class="about-us-text">
+            Welcome to Metro Munch, where culinary artistry meets heartfelt hospitality.
+            Our journey began with a vision to redefine the dining experience in Juja, Kenya,
+            crafting a menu that celebrates fresh, locally sourced ingredients and a warm,
+            inviting ambiance. At Metro Munch, our chefs are passionate about creating
+            dishes that tell a story of flavor and quality. Whether you're savoring a classic
+            favorite or exploring innovative creations, our commitment to culinary excellence
+            shines through. Complemented by a dedicated team, we aim to make every visit memorable,
+            ensuring that Metro Munch becomes your home away from home. We pride ourselves on
+            sustainability and community engagement, making conscious choices to minimize our ecological
+            footprint. Thank you for choosing Metro Munch - we look forward to welcoming you to a 
+            dining experience that blends exceptional cuisine with genuine hospitality.
+        </div>
+    </section>
+    <!-- ABOUT US END -->
+    <!-- SERVICES START -->
+    <section id="services" class="services">
+        <div>
+            <div>
+                <img src="{% static 'img/index/service1/jpg' %}" alt="">
+            </div>
+            <h2>Culinary Delights</h2>
+            <p>
+                At Metro Munch, our primary service revolves around delivering an
+                exceptional culinary experience. Our talented chefs curate a diverse
+                and enticing menu featuring a blend of classic favorites and innovative creations
+                . Whether you're indulging in a leisurely brunch, a quick
+                lunch, or a romantic dinner, each dish is crafted with precision,
+                using fresh, locally sourced ingredients to ensure a memorable dining
+                experience.
+            </p>
+        </div>
+        <div>
+            <h2>Warm Hospitality</h2>
+            <p>
+                Beyond the delectable flavors on your plate, we pride ourselves
+                on providing warm and attentive hospitality. Our service extends
+                beyond the food, with a dedicated team of servers and staff
+                committed to making your visit seamless and enjoyable. From the moment
+                you step through our doors, our goal is to create an inviting atmosphere
+                where you feel welcome, cared for, and a part
+                of the Metro Munch family.
+            </p>
+        </div>
+        <div>
+            <h2>Private Events and Catering</h2>
+            <p>
+                Metro Munch offers a unique service for those looking to elevate
+                their special occasions. Our private dining area is the
+                perfect setting for intimate gatherings, celebrations, or corporate events.
+                Additionally, we provide catering services, bringing the same culinary excellence
+                and hospitality to your chosen venue. Let us tailor a menu and experience
+                that caters to your specific needs, making your event an
+                unforgettable affair.
+            </p>
+        </div>
+    </section>
+    <!-- SERVICES END -->
+    <!-- CONTACT US START -->
+    <section id="contact-us" id="contact-us"></section>
+    <!-- CONTACT US END -->
+    <!-- METRO SPECIALS START -->
+    <section id="metro-specials" class="metro-specials">
+        <div class="food-day-container">
+            <h2 class="food-title">Savory Sunday</h2>
+            <div class="food-day-body">
+                <div class="food-image">
+                    <img src="{% static 'img/index/milkshake.png' %}" alt="">
+                </div>
+                <p class="food-text">
+                    Kick off the week with a burst of sweet and savory flavors!
+                            Indulge in sweet delights and pair them with creamy milkshakes. Satisfy your cravings with chocolate, strawberry, or vanilla flavors. Elevate your Sunday indulgence with our delectable treats and refreshing milkshakes.
+                </p>
+            </div>
+        </div>
+        <div class="food-day-container">
+            <h2 class="food-title">Meaty Monday</h2>
+            <div class="food-day-body">
+                <p class="food-text">
+                    Start your day with a protein-packed day! 
+                            Sink your teeth into tender and juicy steak, expertly cooked to perfection. 
+                            Choose from a selection of prime cuts, such as ribeye or filet mignon, bursting with flavor. Accompanied by delectable sides and sauces.
+                </p>
+                <div class="food-image">
+                    <img src="{% static 'img/index/ribs.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="food-day-container">
+            <h2 class="food-title">Taco Tuesday</h2>
+            <div class="food-day-body">
+                <div class="food-image">
+                    <img src="{% static 'img/index/tacos.png' %}" alt="">
+                </div>
+                <p class="food-text">
+                    Spice up your Tuesday with a fiesta of flavors! 
+                            Build your own tacos with a variety of fillings like grilled shrimp, seasoned ground beef, or marinated grilled chicken. Top them off with fresh salsa, guacamole, and a sprinkle of cheese.
+                </p>
+            </div>
+        </div>
+        <div class="food-day-container">
+            <h2 class="food-title">Wholesome Wednesday</h2>
+            <div class="food-day-body">
+                <p class="food-text">
+                    Enjoy a colourful salad bursting with fresh green, vibrant
+                            veggies, and grilled chicken or tofu.For a healthier option,
+                            try a bowl of quinoa or a veggie stir-fry.
+                </p>
+                <div class="food-image">
+                    <img src="{% static 'img/index/chicken-salad.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="food-day-container">
+            <h2 class="food-title">Traditional Thursday</h2>
+            <div class="food-day-body">
+                <div class="food-image">
+                    <img src="{% static 'img/index/ugali-extra.png' %}" alt="">
+                </div>
+                <p class="food-text">
+                    Dive into flavors of Kenyan cuisines.
+                            Go back to your roots with hot white or brown 
+                            ugali served with a side of sukuma-wiki, wet-fried 
+                            beef and kachumbari.
+                </p>
+            </div>
+        </div>
+        <div class="food-day-container">
+            <h2 class="food-title">Flavour Friday</h2>
+            <div class="food-day-body">
+                <div class="food-image">
+                    <img src="{% static 'img/index/soda.png' %}" alt="">
+                </div>
+                <p class="food-text">
+                    Indulge in the tantalizing flavors of perfectly
+                            fried fish and the satisfying crunch of golden
+                            chips with a complementary 500ml soda.
+                </p>
+                <div class="food-image">
+                    <img src="{% static 'img/index/fish-chips.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="food-day-container">
+            <h2 class="food-title">Seafood Saturday</h2>
+            <div class="food-day-body">
+                <div class="food-image">
+                    <img src="{% static 'img/index/shrimp.png' %}" alt="">
+                </div>
+                <p class="food-text">
+                    Celebrate the end of the workweek with a 
+                            seafood extravaganza! Savor succulent 
+                            shrimp scampi, grilled salmon, or a seafood 
+                            paella brimming with clams, mussels, and 
+                            calamari. Don't forget a squeeze of lemon to 
+                            enhance the flavors.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- METRO SPECIALS END -->
+</main>
+<!--  -->
+<!-- THE START OF BACKGROUND IMAGES -->
+<div class="background-doodles">
+    <img class="img-2" src="{% static 'img/feedback/cake-copy.png' %}">
+    <img class="illustr-PNG-PSD" src="{% static 'img/feedback/fork-knife-spoon-copy.png' %}">
+    <img class="img-3" src="{% static 'img/feedback/pizza.png' %}">
+    <img class="img-4" src="{% static 'img/feedback/ramen.png' %}">
+</div>
+<div class="contact-info">
+    <div class="overlap-4">
+        <div class="text-wrapper-4" font-family="Homemade Apple">
+            Contact Info
+        </div>
+        <div class="text-wrapper-5">River Road, Kijani.</div>
+        <div class="image">
+            <img class="location-icon" src="{% static 'img/contact-us/location-icon.png' %}">
+        </div>
+        <div class="text-wrapper-6">@metro_munch873</div>
+        <img class="instagram-icon" src="{% static 'img/contact-us/instagram-icon.png' %}">
+        <div class="text-wrapper-7">metromunch@gmail.com</div>
+        <img class="mail-icon" src="{% static 'img/contact-us/Email-icon.png' %}">
+        <div class="text-wrapper-8">+873 933 920123</div>
+        <img class="phone-icon" src="{% static 'img/contact-us/phone-icon.png' %}">
+        <div class="overlap-group-3">
+            <div class="text-wrapper-9">Open 24hrs</div>
+            <img class="clock-icon" src="{% static 'img/contact-us/clock-icon.png' %}">
+        </div>
+        <img class="line-3" src="{% static 'img/contact-us/line-icon.png' %}">
+    </div>
+    <!-- END OF BACKGROUND IMAGES -->
+    <div class="footer"></div>
+</div>
+</div>
+</div>
+<!--  CONTACT US END -->
+{% endblock body %}

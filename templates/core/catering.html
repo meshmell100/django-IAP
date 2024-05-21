@@ -1,0 +1,89 @@
+{% extends '../base.html' %}
+{% load static %}
+
+
+{% block title %}catering{% endblock title %}
+
+{% block body %} 
+<!--MAIN BEGIN-->
+<main>
+
+  <!--BACK-ground IMAGE BEGIN-->
+  <div class="back-ground">
+    <img src="{% static "img/catering/background.jpg" %}" > 
+
+    <div>
+      <h2 class="intro-text">Catering Services</h2>
+   </div>
+  <!--PACKAGES BEGIN-->
+
+   <div class="packages">
+    
+    <!--PACKAGE-1 BEGIN-->
+     <div class="package1">
+       <div class="top-elements">
+         <p class="package-title">Basic Package</p>
+         <img class="icon" src="{% static "img/catering/basic.png" %}" alt="" />
+         <p class="price">Sh. 500 Per Person</p>
+       </div>
+       <hr />
+       <div class="bottom-elements">
+         <ul class="services">
+           <li>Self-service Buffet available</li>
+           <li>Choose any 3 meals from our Buffet</li>
+           <li>Food delivery to door-step,no set up.</li>
+         </ul>
+         <div class="get-button"><button>GET</button></div>
+       </div>
+     </div>
+    <!--PACKAGE-1 END-->
+
+    <!--PACKAGE-2 BEGIN-->
+     <div class="package2">
+       <div class="top-elements">
+         <p class="package-title">Advanced Package</p>
+         <img class="icon" src="{% static "img/catering/advanced.png" %}" alt="" />
+         <p class="price">Sh. 800 Per Person</p>
+       </div>
+       <hr />
+       <div class="bottom-elements">
+         <ul class="services">
+           <li>Self-service and served Buffet available</li>
+           <li>Choose from any 4 meals and a drink from our menu</li>
+           <li>Delivery to door-step and catering set up</li>
+         </ul>
+         <div class="get-button"><button>GET</button></div>
+       </div>
+     </div>
+    <!--PACKAGE-2 END-->
+
+    <!--PACKAGE-3 BEGIN-->
+     <div class="package3">
+       <div class="top-elements">
+         <p class="package-title">Premium Package</p>
+         <img class="icon" src="{% static "img/catering/premium-b.png" %}"alt="" />
+         <p class="price">Sh. 1500 Per Person</p>
+       </div>
+       <hr />
+       <div class="bottom-elements">
+         <ul class="services">
+           <li>Self-service, served Buffet and plated-sevice available</li>
+           <li>Choose from any 6 meals and 2 drinks from our menu</li>
+           <li>Delivery to door-step and catering set up provided</li>
+           <li>Cutlery and crockery provided</li>
+         </ul>
+         <div class="get-button"><button>GET</button></div>
+       </div>
+     </div>
+   </div>
+
+   <!--PACKAGE3 END-->
+
+   <!--PACKAGES END-->
+
+  </div>
+<!--BACK-ground IMAGE END-->
+
+</main>
+<!--MAIN END-->
+{% endblock body %}

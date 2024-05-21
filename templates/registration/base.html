@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'css/registration/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/registration/login.css' %}">
+        <link rel="stylesheet" href="{% static 'css/registration/signup.css' %}">
+        <title>METRO MUNCH | {% block title %}{% endblock %}</title>
+    </head>
+    <body class="body-reg">
+        <div class="pizza-reg">
+            <img src="{% static 'img/feedback/pizza.png' %}" alt="">
+        </div>
+        <div class="noodles-reg">
+            <img src="{% static 'img/feedback/ramen.png' %}" alt="">
+        </div>
+        <div class="cake-reg">
+            <img src="{% static 'img/feedback/cake.png' %}" alt="">
+        </div>
+        <div class="spoons-reg">
+            <img src="{% static 'img/feedback/fork-knife-spoon.png' %}" alt="">
+        </div>
+        {% block body %}
+            <h2>{% block form_title %}{% endblock form_title %}</h2>
+            {% block form %}
+                {% block form_fields %}{% endblock form_fields %}
+                <span>{% block form_footer_link %}{% endblock form_footer_link %}</span>
+                {% block submit_button %}{% endblock submit_button %}
+            {% endblock form %}
+            {% endblock body %}
+    </body>
+</html>

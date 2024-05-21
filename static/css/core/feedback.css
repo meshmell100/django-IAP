@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Kalam:wght@300;400;700&display=swap');
+.outer{
+   width: 1349px;
+
+}
+.main {
+    background-image: linear-gradient(#8A6240, #CABA9C);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pizza {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pizza img{
+    width:250px;
+}
+
+.noodles img {
+    transform: rotate(45deg);
+    width: 270px;
+}
+
+.noodles {
+    position: absolute;
+    top: 0;
+    right: 6px;
+}
+
+.spoons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.spoons img{
+    width:250px;
+    transform: rotate(-30deg);
+}
+
+.cake {
+    position: absolute;
+    right: -10px;
+    bottom: -28px;
+}
+
+.cake img{
+    width:250px;
+    transform: rotate(-45deg);
+}
+
+.inner-container {
+    width: 900px;
+    height: 450px;
+    background-color: #8A6240;
+    margin-right: 10px;
+    border-radius: 7px;
+    position: relative;
+    z-index: 4;
+
+}
+
+.body {
+    margin: 0;
+}
+
+.lower-elements {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.upper-text,.leftside-elements p,.form{
+    font-size: small;
+    font-family: 'kalam', cursive;
+}
+
+input,
+p {
+    margin: 1px;
+}
+
+p {
+    margin-left: 20px;
+    color: white;
+}
+
+.rightside-elements p {
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+input {
+    border: 1px solid #8A6240;
+    border-radius: 8px;
+    background-color: #CABA9C;
+
+}
+
+#names,
+#email,
+#message {
+    width: 200px;
+    height: 35px;
+}
+
+#message {
+    width: 200px;
+    height: 65px;
+}
+
+.input-buttons {
+    display: flex;
+    gap: 60px;
+}
+
+.upper-text,
+.leftside-elements p {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.upper-text {
+    text-align: center;
+    color: white;
+}
+
+.rightside-elements {
+    margin-right: 40px;
+}
+
+.reset-submit-buttons{
+    display: flex;
+    gap: 70px;
+    margin-top: 10px;
+}
+
+.reset-submit-buttons button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 400;
+    background-color: #EDD6B3;
+    
+}
+.reset{
+    margin-left: 7px;
+}
+
+.thumbs-up img{
+    width:310px;
+}
+
+.leftside-elements{
+    margin-left: 30px;
+}

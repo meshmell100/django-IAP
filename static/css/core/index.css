@@ -1,0 +1,38 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+.food-day-container {
+	background: #F0B484;
+	padding: 25px;
+	margin: 10px 0;
+}
+
+.food-day-body {
+	display: flex;
+}
+
+.food-title {
+	color: #4E2D18;
+	/* font-family: ; Homemade Apple*/
+	font-size: 70px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.food-text {
+	color: #864816;
+	/* font-family: Handlee; */
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.food-title {
+	text-align: center;
+}
